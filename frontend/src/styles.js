@@ -30,7 +30,7 @@ export const ListPokemon = styled.ul `
     }
 
     li p {
-        color: #737380;
+        color: #FFFFFF;
         line-height: 21px;
         font-size: 16px;
     }
@@ -52,5 +52,12 @@ export const SearchInput = styled.input `
 `;
 
 export const HeaderApplication = styled.header `
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+
+    img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
 `;
