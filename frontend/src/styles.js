@@ -1,24 +1,32 @@
 import styled from "styled-components";
 
 export const GlobalStyle = styled.div `
-    width: 100%;
-    max-width: 1180px;
-    padding: 0 30px;
-    margin: 32px auto;
+    padding: 1rem;
+    max-width: 1100px;
+    margin: auto;
+`;
 
-    ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 15px;
-        list-style: none;
-    }
+export const ListPokemon = styled.ul `
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 15px;
+    text-align: center;
+    position: relative;
+    margin: auto;
 
     li{
+        cursor: pointer;
+        width: 12rem auto;
         align-items: center;
-        background: #FFF;
+        background: #203144;
         padding: 24px;
         border-radius: 8px;
         position: relative;
+        overflow: hidden;
+    }
+
+    li:hover {
+        transform: scale(1.05);
     }
 
     li p {
@@ -28,7 +36,21 @@ export const GlobalStyle = styled.div `
     }
 
     li img {
+        width: 150px;
+        display: block;
         margin: auto;
-        width: 50%;
     }
+`;
+
+export const SearchInput = styled.input `
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+`;
+
+export const HeaderApplication = styled.header `
+    margin-bottom: 10px;
 `;

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import api from '../../services/api';
 
-import {GlobalStyle} from '../../styles';
+import {GlobalStyle, ListPokemon, SearchInput, HeaderApplication} from '../../styles';
 
 export default function Pokemons() {
     const [pokemons, setPokemons] = useState([]);
@@ -16,8 +16,14 @@ export default function Pokemons() {
     });
 
     return (
+       
+
         <GlobalStyle>
-            <ul>
+             <HeaderApplication>
+                <SearchInput></SearchInput>
+            </HeaderApplication>
+
+            <ListPokemon>
                 
                 { pokemons.map(pokemon => (
                     <li key={pokemon.id}>
@@ -25,7 +31,7 @@ export default function Pokemons() {
                         <p>{pokemon.name}</p>
                     </li>
                 ))}
-            </ul>
+            </ListPokemon>
         </GlobalStyle>
     );
 
