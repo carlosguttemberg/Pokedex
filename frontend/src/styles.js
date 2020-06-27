@@ -43,21 +43,33 @@ export const ListPokemon = styled.ul `
 `;
 
 export const SearchInput = styled.input `
-    width: 100%;
-    height: 60px;
-    color: #333;
-    border: 1px solid #dcdce6;
-    border-radius: 8px;
+    width: 40%;
+    height: 35px;
+    color: #95AABC;
+    border: 2px solid #203144;
+    border-radius: 9999px;
     padding: 0 24px;
+    background-color:#203144;
+    margin-left: auto;
+    margin-top: 3px;
+    font-size: 15px;
+    color: white;
+
+    &:focus{
+        box-shadow: 0 0 0 3px rgba(66,153,225,.5);
+    }
 `;
 
 export const HeaderApplication = styled.header `
     margin-bottom: 50px;
-
+    display: flex;
+    border-bottom: 2px solid #203144;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
     img {
-        width: 300px;
+        width: 200px;
         display: block;
-        margin: auto;
-        margin-bottom: 30px;
+        margin-right: auto;
     }
 `;
