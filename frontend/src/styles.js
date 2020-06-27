@@ -27,6 +27,7 @@ export const ListPokemon = styled.ul `
 
     li:hover {
         transform: scale(1.05);
+        box-shadow: 0 0 0 3px rgba(66,153,225,.5);
     }
 
     li p {
@@ -61,7 +62,7 @@ export const SearchInput = styled.input `
 `;
 
 export const HeaderApplication = styled.header `
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     display: flex;
     border-bottom: 2px solid #203144;
     align-items: center;
@@ -72,4 +73,31 @@ export const HeaderApplication = styled.header `
         display: block;
         margin-right: auto;
     }
+`;
+
+export const PokeButton = styled.button `
+    width: 100%;
+    height: 60px;
+    background: #203144;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+    cursor: pointer;
+
+    &:Hover{
+        box-shadow: 0 0 0 3px rgba(66,153,225,.5);
+    }
+`;
+
+export const DivPaginator = styled.div `
+    display: flex;
+    margin-bottom: 15px;
 `;
