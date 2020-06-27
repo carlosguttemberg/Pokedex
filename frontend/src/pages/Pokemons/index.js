@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
 import {GlobalStyle, ListPokemon} from '../../styles';
 import Header from '../Header';
-import load from '../../assets/load.gif'
 
 export default function Pokemons() {
     const [pokemons, setPokemons] = useState([]);
-    let   page = 1;
+    const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
     const [total, setTotal] = useState(0);
+    const history = useHistory();
+
+    async function handleScroll() {
+        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
+        await loadPokemons();
+    }
 
     async function loadPokemons() {
         if(loading){
             return null;
         }
 
-        if(total > 0 && pokemons.length == total){
+        if(total > 0 && pokemons.length === total){
             return null;
         }
 
@@ -30,13 +35,8 @@ export default function Pokemons() {
 
         setPokemons(pokemons => [...pokemons, ...response.data]);
         setTotal(response.headers['x-total-count']);
-        page = page +1;
+        setPage(page => page +1);
         setLoading(false);
-    }
-
-    function handleScroll() {
-        if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight) return;
-        loadPokemons();
     }
 
     useEffect(() => {
@@ -46,15 +46,28 @@ export default function Pokemons() {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [loading, page, total]);
+
+    async function handleAttributes(id, e) {
+        e.preventDefault();
+    
+        try{
+            console.log('teste - ' + id);
+            history.push({pathname: '/attributes',
+                          state: { id: id}
+            });
+        } catch(err){
+            alert('Falha no login, tente novamente.')
+        }
+    }
 
     return (
         <GlobalStyle>
             <Header/>
             <ListPokemon>
                 { pokemons.map(pokemon => (
-                    <li key={pokemon.id}>
-                        <img src={pokemon.img_front}></img>
+                    <li key={pokemon.id} onClick={(e) => handleAttributes(pokemon.id, e)}>
+                        <img src={pokemon.img_front} alt={pokemon.name}></img>
                         <p><b><i>#{pokemon.id}</i> - {pokemon.name}</b></p>
                     </li>
                 ))}
