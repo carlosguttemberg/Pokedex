@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import api from '../../services/api';
 
-import {GlobalStyle, ListPokemon} from '../../styles';
+import {GlobalStyle, ListPokemon, LiList, ImgPokemon, Paragraph} from '../../styles';
 import Header from '../Header';
 
 export default function Pokemons() {
@@ -66,10 +66,10 @@ export default function Pokemons() {
             <Header/>
             <ListPokemon>
                 { pokemons.map(pokemon => (
-                    <li key={pokemon.id} onClick={(e) => handleAttributes(pokemon.id, e)}>
-                        <img src={pokemon.img_front} alt={pokemon.name}></img>
-                        <p><b><i>#{pokemon.id}</i> - {pokemon.name}</b></p>
-                    </li>
+                    <LiList key={pokemon.id} onClick={(e) => handleAttributes(pokemon.id, e)}>
+                        <ImgPokemon src={pokemon.img_front} alt={pokemon.name}></ImgPokemon>
+                        <Paragraph><b><i>#{pokemon.id}</i> - {pokemon.name}</b></Paragraph>
+                    </LiList>
                 ))}
             </ListPokemon>
         </GlobalStyle>

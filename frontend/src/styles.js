@@ -6,6 +6,59 @@ export const GlobalStyle = styled.div `
     margin: auto;
 `;
 
+export const LiList = styled.li `
+    cursor: pointer;
+    width: 12rem auto;
+    align-items: center;
+    background: #203144;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 3px rgba(66,153,225,.5);
+    }
+`;
+
+export const Paragraph = styled.p `
+    color: #FFFFFF;
+    line-height: 21px;
+    font-size: 16px;
+`;
+
+export const Title = styled.h1 `
+    color: #FFFFFF;
+    text-align:center; 
+`;
+
+export const CardDetail = styled.div `
+    width: 100%;
+    background: #203144;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+`;
+
+export const CardImage = styled.div `
+    width: 150px;
+    float: left;
+`;
+
+export const ImgPokemon = styled.img `
+    width: 150px;
+    display: block;
+    margin: auto;
+`;
+
+export const ImgAttribute = styled.img `
+    width: 80px;
+    display: block;
+    margin: auto;
+`;
+
 export const ListPokemon = styled.ul `
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -13,33 +66,30 @@ export const ListPokemon = styled.ul `
     text-align: center;
     position: relative;
     margin: auto;
+`;
 
-    li{
-        cursor: pointer;
-        width: 12rem auto;
-        align-items: center;
-        background: #203144;
-        padding: 24px;
-        border-radius: 8px;
-        position: relative;
-        overflow: hidden;
-    }
+export const ListAttributes = styled.ul `
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 15px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+`;
 
-    li:hover {
+export const LiListAttributes = styled.li `
+    cursor: pointer;
+    width: 12rem auto;
+    align-items: center;
+    background: #203144;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
         transform: scale(1.05);
         box-shadow: 0 0 0 3px rgba(66,153,225,.5);
-    }
-
-    li p {
-        color: #FFFFFF;
-        line-height: 21px;
-        font-size: 16px;
-    }
-
-    li img {
-        width: 150px;
-        display: block;
-        margin: auto;
     }
 `;
 
@@ -73,6 +123,11 @@ export const HeaderApplication = styled.header `
         display: block;
         margin-right: auto;
     }
+`;
+
+export const LineSeparator = styled.hr `
+    border: 2px solid #203144;
+    margin-bottom: 20px;
 `;
 
 export const PokeButton = styled.button `
