@@ -50,42 +50,60 @@ export default function Attributes() {
                         <CardDetail>
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>HP</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={hp} alt="health"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.hp}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
 
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>Defense</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={defense} alt="defense"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.defense}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
 
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>Attack</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={attack} alt="attack"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.attack}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
 
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>SP Attack</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={sp_attack} alt="sp_attack"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.sp_atk}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
 
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>SP Defense</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={sp_defense} alt="sp_defense"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.sp_def}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
 
                             <ListAttributes>
                                 <LiListAttributes>
+                                    <Paragraph><b>Speed</b></Paragraph>
+                                    <br/>
                                     <ImgAttribute src={speed} alt="speed"></ImgAttribute>
+                                    <br/>
                                     <Paragraph><b>{attribute.speed}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
