@@ -59,6 +59,11 @@ export const ImgAttribute = styled.img `
     margin: auto;
 `;
 
+export const ImgTypes = styled.img `
+    width: 30px;
+    margin: auto;
+`;
+
 export const ListPokemon = styled.ul `
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -156,3 +161,14 @@ export const DivPaginator = styled.div `
     display: flex;
     margin-bottom: 15px;
 `;
+
+export const SpanLegendary = styled.span `
+    background: #cebf7b;
+    color: #333;
+    padding: 0.1rem;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    top: 0;
+    left: 0;
+` ;

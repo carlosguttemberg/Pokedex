@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { returnTypeIcons } from '../../utils/returnTypeIcons';
 
 import api from '../../services/api';
 
-import {GlobalStyle, ListPokemon, LiList, ImgPokemon, Paragraph} from '../../styles';
+import {GlobalStyle, ListPokemon, LiList, ImgPokemon, Paragraph, SpanLegendary, ImgTypes} from '../../styles';
 import Header from '../Header';
 
 export default function Pokemons() {
@@ -52,12 +53,11 @@ export default function Pokemons() {
         e.preventDefault();
     
         try{
-            console.log('teste - ' + id);
             history.push({pathname: '/attributes',
                           state: { id: id}
             });
         } catch(err){
-            alert('Falha no login, tente novamente.')
+            alert('Something is wrong.')
         }
     }
 
@@ -67,8 +67,15 @@ export default function Pokemons() {
             <ListPokemon>
                 { pokemons.map(pokemon => (
                     <LiList key={pokemon.id} onClick={(e) => handleAttributes(pokemon.id, e)}>
+
+                        { pokemon.legendary ? <SpanLegendary>Legendary</SpanLegendary> : ''}
+                        
                         <ImgPokemon src={pokemon.img_front} alt={pokemon.name}></ImgPokemon>
                         <Paragraph><b><i>#{pokemon.id}</i> - {pokemon.name}</b></Paragraph>
+
+                        <br/>
+                        {<ImgTypes src={returnTypeIcons(pokemon.type1)} title={pokemon.type1}></ImgTypes>}
+                        { pokemon.type2 ? <ImgTypes src={returnTypeIcons(pokemon.type2)} title={pokemon.type2}></ImgTypes> : ''}
                     </LiList>
                 ))}
             </ListPokemon>
