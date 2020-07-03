@@ -3,7 +3,9 @@ import { useLocation, useHistory } from "react-router-dom";
 import api from '../../services/api';
 import { returnTypeIcons } from '../../utils/returnTypeIcons';
 import Header from '../Header';
-import {GlobalStyle, ImgPokemonTitle, CardDetail, CardImage, Title, LineSeparator, ListAttributes, LiListAttributes, Paragraph, ImgAttribute, ImgTypes, SpanLegendaryAttribute, CardSubDetailFlex, CardSubDetailGrid} from '../../styles';
+import {GlobalStyle, ImgPokemonTitle, CardDetail, CardImage, Title, LineSeparator, ListAttributes, 
+        LiListAttributes, Paragraph, ImgAttribute, ImgTypes, SpanLegendaryAttribute, CardSubDetailFlex, 
+        CardSubDetailGrid, CardAttributes} from '../../styles';
 
 
 import hp from '../../assets/hp.png';
@@ -67,7 +69,7 @@ export default function Attributes() {
 
                         <LineSeparator/>
 
-                        <CardDetail>
+                        <CardAttributes>
                             <ListAttributes>
                                 <LiListAttributes>
                                     <Paragraph><b>HP</b></Paragraph>
@@ -127,7 +129,7 @@ export default function Attributes() {
                                     <Paragraph><b>{attribute.speed}</b></Paragraph>
                                 </LiListAttributes>
                             </ListAttributes>
-                        </CardDetail>
+                        </CardAttributes>
                     </div>
                 ) ) }
         </GlobalStyle>

@@ -30,18 +30,26 @@ export const Paragraph = styled.p `
 
 export const Title = styled.h1 `
     color: #FFFFFF;
-    text-align:center; 
 `;
 
 export const CardDetail = styled.div `
-    width: 100%;
     background: #203144;
     border-radius: 8px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+`;
+
+export const CardAttributes = styled.div `
+    width: 100%;
+    background: #203144;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 `;
 
 export const CardSubDetailGrid = styled.div `
@@ -57,7 +65,7 @@ export const CardSubDetailFlex = styled.div `
 `;
 
 export const CardImage = styled.div `
-    width: 150px;
+    width: 200px;
     float: left;
     margin-left: 20px;
     margin-right: 60px;
@@ -97,11 +105,11 @@ export const ListPokemon = styled.ul `
 
 export const ListAttributes = styled.ul `
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-gap: 15px;
     text-align: center;
     position: relative;
     margin: auto;
+    width: 8rem auto;
 `;
 
 export const LiListAttributes = styled.li `
