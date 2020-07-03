@@ -40,15 +40,37 @@ export const CardDetail = styled.div `
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+`;
+
+export const CardSubDetailGrid = styled.div `
+    display: grid;
+    align-items: center;
+    position: relative;
+`;
+
+export const CardSubDetailFlex = styled.div `
+    display: flex;
+    align-items: center;
+    position: relative;
 `;
 
 export const CardImage = styled.div `
     width: 150px;
     float: left;
+    margin-left: 20px;
+    margin-right: 60px;
 `;
 
 export const ImgPokemon = styled.img `
     width: 150px;
+    display: block;
+    margin: auto;
+`;
+
+export const ImgPokemonTitle = styled.img `
+    width: 200px;
     display: block;
     margin: auto;
 `;
@@ -171,4 +193,15 @@ export const SpanLegendary = styled.span `
     border-radius: 0 0 10px 0;
     top: 0;
     left: 0;
+` ;
+
+export const SpanLegendaryAttribute = styled.span `
+    background: #cebf7b;
+    color: #333;
+    padding: 0.1rem;
+    font-weight: 700;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    top: 0;
+    right: 0;
 ` ;

@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { useLocation, useHistory } from "react-router-dom";
 import api from '../../services/api';
+import { returnTypeIcons } from '../../utils/returnTypeIcons';
 import Header from '../Header';
-import {GlobalStyle, ImgPokemon, CardDetail, CardImage, Title, LineSeparator, ListAttributes, LiListAttributes, Paragraph, ImgAttribute} from '../../styles';
+import {GlobalStyle, ImgPokemonTitle, CardDetail, CardImage, Title, LineSeparator, ListAttributes, LiListAttributes, Paragraph, ImgAttribute, ImgTypes, SpanLegendaryAttribute, CardSubDetailFlex, CardSubDetailGrid} from '../../styles';
 
 
 import hp from '../../assets/hp.png';
@@ -39,10 +40,29 @@ export default function Attributes() {
                     <div>
                         <CardDetail>
                             <CardImage>
-                                <ImgPokemon src={attribute.img_front} alt={attribute.name}></ImgPokemon>
+                                <ImgPokemonTitle src={attribute.img_front} alt={attribute.name}></ImgPokemonTitle>
                             </CardImage>
+
+                            <CardSubDetailGrid>
+                                <Title><b><i>#{attribute.id}</i> -{attribute.name} / <i>{attribute.generation}</i>° generation</b></Title>
+                                <CardSubDetailFlex>
+                                    <CardSubDetailFlex>
+                                        {<ImgTypes src={returnTypeIcons(attribute.type1)} title={attribute.type1}></ImgTypes>}
+                                        <Paragraph>&nbsp;<b>{attribute.type1}</b></Paragraph>
+                                    </CardSubDetailFlex>
+
+                                    { attribute.type2 ? 
+                                        <CardSubDetailFlex>
+                                             <Paragraph> &nbsp; <b>-</b> &nbsp;</Paragraph>
+                                            <ImgTypes src={returnTypeIcons(attribute.type2)} title={attribute.type2}></ImgTypes> 
+                                            <Paragraph>&nbsp;<b>{attribute.type2}</b></Paragraph> 
+                                        </CardSubDetailFlex>: ''}
+
+                                </CardSubDetailFlex>
                                 
-                            <Title><b><i>#{attribute.id}</i> -{attribute.name}</b></Title>
+                            </CardSubDetailGrid>
+
+                            { attribute.legendary ? <SpanLegendaryAttribute>Legendary</SpanLegendaryAttribute> : ''}
                         </CardDetail>
 
                         <LineSeparator/>
