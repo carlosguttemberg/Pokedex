@@ -1,5 +1,5 @@
 # Pokedex
-Pokedex criada usanda NodeJs e React
+Pokedex criada usando NodeJs e React
 <p align="center">
    <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/frontend/src/assets/pokemon-logo.png" width="300">
    <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/node-js.png" width="300">
