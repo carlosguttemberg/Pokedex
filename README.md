@@ -15,11 +15,12 @@ Pokedex criada usando NodeJs e React
 <p>O projeto conta com uma tela de listagem para os Pokémons, com uma indicação de quais são Pokémons lendários</p>
 
 <p align="center">
-   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/listPokemons.png" width="480" height="480">
-   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/legendary.png" width="480" height="480">
+   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/listPokemons.png">
+   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/legendary.png">
 </p>
 
-<p>Além de uma para mostrar os atributos especificos de cada um.</p>
+
+<p>Além de uma para mostrar os atributos especifícos de cada um.</p>
 <p align="center">
   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/detailsPokemon.png" width="800" height="460">
 </p>
@@ -37,14 +38,14 @@ Pokedex criada usando NodeJs e React
 
 ### :rocket: Executando o projeto
 
-<p>Primeiro é preciso instalar as dependencias do projeto, para isso basta acessar a basta backend e a pasta frontend pelo terminal e executar o install</p>
+<p>Primeiro é preciso instalar as dependencias do projeto, para isso basta acessar a pasta backend e a pasta frontend pelo terminal e executar o install</p>
 
 ```bash
   npm install
 ```
 
 ### :factory: Executando o servidor (Aplicação em NodeJs)
-<p>Acessar a pasta backend e alterar o arquivo knexfile.js com as configurações da base de dados local, no exemplo abaixo esta 
+<p>Acessar a pasta backend e alterar o arquivo knexfile.js com as configurações da base de dados local, no exemplo abaixo está
 configurado uma base de dados MySQL, mas o Knex suporta outras bases. Mais informações na documentação http://knexjs.org/</p>
 
 <p align="center">
@@ -60,7 +61,7 @@ configurado uma base de dados MySQL, mas o Knex suporta outras bases. Mais infor
 <p>Os dados dos Pokémons se encontram nos dois arquivos dentro da pasta database, bastar copiar e executar na base de dados, primeiro é preciso executar os 
 dados dos Pokémons</p>
 
-<p>Feito isso so sera preciso executar o comando abaixo na pasta do backend para que o servidor fique rodando, ele funciona na porta 3333</p>
+<p>Feito isso só será preciso executar o comando abaixo na pasta do backend para que o servidor fique rodando, ele funciona na porta 3333</p>
 
 ```bash
   npm start
@@ -68,7 +69,7 @@ dados dos Pokémons</p>
 
 ### :computer: Executando o Frontend (React)
 
-<p>A aplicação react so será preciso executar o start e o site sera carregado, é preciso uma conexão com a internet para exibir as imagens</p>
+<p>Na aplicação react só será preciso executar o start e o site será carregado, é preciso uma conexão com a internet para exibir as imagens</p>
 
 ```bash
   npm start
