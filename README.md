@@ -32,6 +32,7 @@ Pokedex criada usanda NodeJs e React
 <p>Navegação entre as telas do projeto</p>
 <p align="center">
   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigation.gif">
+   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigationPages.gif">
 </p>
 
 ### :rocket: Executando o projeto
