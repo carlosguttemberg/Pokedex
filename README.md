@@ -10,9 +10,9 @@ Pokedex criada usando NodeJs e React
 
 ### :scroll: Sobre o projeto
 
-<p>Projeto para treino para construir uma Pókedex, listar os Pokémons até a sexta geração e mostrar os atributos de cada um. </p>
-<p>Com isso foram construido duas aplicações, uma usando NodeJs para servidor e outra usando React como Frontend, além do CSS feito especificamente para o projeto, usando o StyledComponents</p>
-<p>O projeto conta com uma tela de listagem para os Pokémons, com uma indicação de quais são Pokémons lendários</p>
+<p>Projeto para aprendizagem, construção de uma Pokédex, listando os Pokémon até a sexta geração com seus respectivos atributos. </p>
+<p>Para seu desenvolvimento foram criadas duas aplicações, a primeira usando NodeJs para a construção do servidor e a segunda usando React para o Frontend. No projeto também foi utilizado CSS, feito especificamente para o mesmo, usando o StyledComponents.</p>
+<p>Ele conta com uma tela de listagem para os Pokémon, contendo uma indicação de quais são lendários.</p>
 
 <p align="center">
    <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/listPokemons.png">
