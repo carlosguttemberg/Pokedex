@@ -10,9 +10,9 @@ Pokedex criada usando NodeJs e React
 
 ### :scroll: Sobre o projeto
 
-<p>Projeto para treino para construir uma Pókedex, listar os Pokémons até a sexta geração e mostrar os atributos de cada um. </p>
-<p>Com isso foram construido duas aplicações, uma usando NodeJs para servidor e outra usando React como Frontend, além do CSS feito especificamente para o projeto, usando o StyledComponents</p>
-<p>O projeto conta com uma tela de listagem para os Pokémons, com uma indicação de quais são Pokémons lendários</p>
+<p>Projeto para aprendizagem, construção de uma Pokédex, listando os Pokémon até a sexta geração com seus respectivos atributos. </p>
+<p>Para seu desenvolvimento foram criadas duas aplicações, a primeira usando NodeJs para a construção do servidor e a segunda usando React para o Frontend. No projeto também foi utilizado CSS, feito especificamente para o mesmo, usando o StyledComponents.</p>
+<p>Ele conta com uma tela de listagem para os Pokémon, contendo uma indicação de quais são lendários.</p>
 
 <p align="center">
    <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/listPokemons.png">
@@ -22,18 +22,18 @@ Pokedex criada usando NodeJs e React
 
 <p>Além de uma para mostrar os atributos especifícos de cada um.</p>
 <p align="center">
-  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/detailsPokemon.png" width="800" height="460">
+  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/detailsPokemon.png" width="1200">
 </p>
 
 <p>No projeto foi usado o infinite scroll para carregar os Pokémons de 20 em 20.</p>
 <p align="center">
-  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/infiniteScroll.gif">
+  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/infiniteScroll.gif" width="1200">
 </p>
 
 <p>Navegação entre as telas do projeto</p>
 <p align="center">
-  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigation.gif">
-   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigationPages.gif">
+  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigation.gif" width="1200">
+   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigationPages.gif" width="1200">
 </p>
 
 ### :rocket: Executando o projeto
@@ -49,7 +49,7 @@ Pokedex criada usando NodeJs e React
 configurado uma base de dados MySQL, mas o Knex suporta outras bases. Mais informações na documentação http://knexjs.org/</p>
 
 <p align="center">
-   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/knexFile.png" width="400">
+   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/knexFile.png" width="1200">
 </p>
 
 <p>Pelo terminal será preciso executar a criação das tabelas na base de dados, executando o comando:</p>
