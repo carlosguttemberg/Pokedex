@@ -8,5 +8,6 @@ const routes = express.Router();
 
 routes.get('/', PokemonController.index);
 routes.get('/attributes', AttributesController.index);
+routes.get('/search', PokemonController.search);
 
 module.exports = routes;

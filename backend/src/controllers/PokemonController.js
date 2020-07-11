@@ -13,5 +13,12 @@ module.exports = {
 
         response.header('X-Total-Count', count['count(*)']);
         return response.json(pokemons);
+    },
+
+    async search(request, response) {
+        const pokemons = await connection('pokemons')
+                                .select('*');
+
+        return response.json(pokemons);
     }
 }
