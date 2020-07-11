@@ -77,6 +77,11 @@ export const ImgPokemon = styled.img `
     margin: auto;
 `;
 
+export const ImgSearch = styled.img `
+    width: 60px;
+    height: 60px;
+`;
+
 export const ImgPokemonTitle = styled.img `
     width: 200px;
     display: block;

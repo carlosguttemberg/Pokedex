@@ -6,6 +6,7 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
+import {ImgSearch} from '../../styles';
 
 const useStyles = makeStyles({
     option: {
@@ -47,8 +48,12 @@ const useStyles = makeStyles({
     listbox: {
         color: 'white',
         backgroundColor:'#203144',
-        msOverflowStyle: 'display: none'
+        
+    },
 
+    loading: {
+      color: 'white',
+      backgroundColor:'#203144',
     }
 
   });
@@ -126,6 +131,13 @@ export default function Asynchronous() {
       onChange={(option, value, e) => {
          handleAttributes(value.id, option)
       }}
+      renderOption={(option) => (
+        <React.Fragment>
+          <ImgSearch src={option.img_front}></ImgSearch>
+          {option.name}
+        </React.Fragment>
+      )}
+
       renderInput={(params) => (
         <TextField
           {...params}
