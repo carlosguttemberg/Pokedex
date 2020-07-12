@@ -30,6 +30,11 @@ Pokedex criada usando NodeJs e React
   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/infiniteScroll.gif" width="1200">
 </p>
 
+<p>Para a pesquisa dos pokémons foi usado o auto complete.</p>
+<p align="center">
+  <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/autoComplete.gif" width="1200">
+</p>
+
 <p>Navegação entre as telas do projeto</p>
 <p align="center">
   <img src="https://github.com/carlosguttemberg/Pokedex/blob/master/img/navigation.gif" width="1200">
